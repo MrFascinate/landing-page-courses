@@ -547,34 +547,29 @@ img {
   z-index: 1;
 }
 
-.host-image-frame {
+.host-photo {
   width: 100%;
   max-width: 420px;
-  aspect-ratio: 3 / 4;
-  background: linear-gradient(135deg, rgba(74, 144, 217, 0.1), rgba(74, 144, 217, 0.03));
-  border: 2px solid var(--blue-glow);
   border-radius: 20px;
-  position: relative;
+  border: 2px solid var(--blue-glow);
+  object-fit: cover;
   margin: 0 auto;
+  display: block;
+  box-shadow: 0 8px 40px rgba(74, 144, 217, 0.15);
+  position: relative;
 }
 
-.host-image-frame::before {
+.host-image {
+  position: relative;
+}
+
+.host-image::before {
   content: '';
   position: absolute;
   inset: -12px;
   border: 1px solid rgba(74, 144, 217, 0.15);
-  border-radius: 24px;
-}
-
-.host-image-frame::after {
-  content: 'Photo';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--text-gray);
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+  border-radius: 28px;
+  pointer-events: none;
 }
 
 .host-label {
