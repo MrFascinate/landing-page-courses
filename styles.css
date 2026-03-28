@@ -258,6 +258,16 @@ img {
   border: 2px solid var(--blue-glow);
   object-fit: cover;
   box-shadow: 0 8px 40px rgba(74, 144, 217, 0.15);
+  transform: rotate(-2deg);
+}
+
+.hero-image-title {
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 16px;
+  letter-spacing: 0.5px;
 }
 
 /* CTA Button */
