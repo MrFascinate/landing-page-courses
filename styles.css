@@ -418,6 +418,10 @@ img {
   color: var(--blue-primary);
 }
 
+.highlight-inline {
+  color: var(--blue-primary);
+}
+
 .problem-section p {
   font-size: 1.05rem;
   color: var(--text-gray);
