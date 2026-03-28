@@ -89,26 +89,13 @@ img {
 }
 
 .nav-logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
 }
 
-.logo-text {
-  color: var(--text-white);
-}
-
-.logo-highlight {
-  color: var(--blue-primary);
-}
-
-.logo-element {
-  color: var(--blue-light);
-  font-size: 0.85em;
-  padding: 1px 4px;
-  border: 1px solid var(--blue-primary);
-  border-radius: 3px;
-  margin: 0 1px;
+.nav-logo-img {
+  height: 32px;
+  width: auto;
 }
 
 .nav-links {
