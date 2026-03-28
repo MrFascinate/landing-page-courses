@@ -244,12 +244,7 @@ img {
   50% { opacity: 0.3; }
 }
 
-/* Hero Image Placeholder */
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Hero Image */
 
 .hero-headshot {
   width: 100%;
@@ -263,11 +258,22 @@ img {
 
 .hero-image-title {
   text-align: center;
-  color: var(--text-gray);
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-top: 16px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 24px;
   letter-spacing: 0.5px;
+  padding: 10px 20px;
+  background: rgba(74, 144, 217, 0.08);
+  border: 1px solid rgba(74, 144, 217, 0.15);
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* CTA Button */
@@ -464,6 +470,14 @@ img {
 /* ========================================
    Curriculum Tiers
    ======================================== */
+.tier-arrow {
+  text-align: center;
+  color: var(--blue-primary);
+  font-size: 1.2rem;
+  margin: 8px 0;
+  opacity: 0.5;
+}
+
 .curriculum-tier {
   margin-bottom: 40px;
   padding: 32px;
