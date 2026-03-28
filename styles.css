@@ -882,27 +882,64 @@ img {
   .register-section h2 {
     font-size: 1.8rem;
   }
+
+  .cta-button {
+    padding: 16px 20px;
+    font-size: 0.95rem;
+  }
+
+  .cta-main {
+    font-size: 1rem;
+  }
+
+  .cover-section {
+    padding: 40px 16px;
+  }
+
+  .cover-card {
+    padding: 32px 16px;
+  }
+
+  .testimonials-section {
+    padding: 60px 16px;
+  }
+
+  .host-section {
+    padding: 60px 16px;
+  }
+
+  .register-section {
+    padding: 60px 16px;
+  }
+
+  .hero {
+    padding: 120px 16px 40px;
+  }
 }
 
 @media (max-width: 600px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .problem-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .register-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .host-text h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .testimonials-section h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .cover-card h2 {
+    font-size: 1.5rem;
   }
 
   .hero-badges {
@@ -910,8 +947,19 @@ img {
     align-items: center;
   }
 
-  .footer-links {
-    flex-direction: column;
-    gap: 12px;
+  .cta-button {
+    padding: 14px 16px;
+  }
+
+  .cta-main {
+    font-size: 0.95rem;
+  }
+
+  .cta-sub {
+    font-size: 0.7rem;
+  }
+
+  .curriculum-tier {
+    padding: 20px 16px;
   }
 }
