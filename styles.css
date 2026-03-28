@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -844,8 +845,10 @@ img {
   }
 
   .navbar {
+    width: calc(100% - 32px);
     border-radius: 16px;
-    padding: 12px 20px;
+    padding: 10px 16px;
+    top: 8px;
   }
 
   .register-section h2 {
