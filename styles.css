@@ -413,6 +413,13 @@ img {
   margin: 0 auto;
 }
 
+.transition-arrow {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 16px;
+  color: #f5a623;
+}
+
 /* ========================================
    Cover Card Section (Assessment CTA + Curriculum)
    ======================================== */
