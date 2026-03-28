@@ -478,12 +478,12 @@ img {
   text-align: center;
   color: var(--blue-primary);
   font-size: 1.2rem;
-  margin: 8px 0;
+  margin: 20px 0;
   opacity: 0.5;
 }
 
 .curriculum-tier {
-  margin-bottom: 40px;
+  margin-bottom: 0;
   padding: 32px;
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
