@@ -130,23 +130,6 @@ img {
   transform: translateY(-1px);
 }
 
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-}
-
-.nav-toggle span {
-  width: 24px;
-  height: 2px;
-  background: var(--text-white);
-  border-radius: 2px;
-  transition: 0.3s;
-}
 
 /* ========================================
    Hero Section
@@ -860,23 +843,9 @@ img {
     display: none;
   }
 
-  .nav-toggle {
-    display: flex;
-  }
-
-  .navbar.nav-open .nav-links {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: var(--bg-nav);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--border-subtle);
+  .navbar {
     border-radius: 16px;
-    padding: 24px;
-    gap: 20px;
+    padding: 12px 20px;
   }
 
   .register-section h2 {
