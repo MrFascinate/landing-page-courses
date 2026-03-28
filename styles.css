@@ -203,7 +203,7 @@ img {
 
 .hero h1 {
   font-family: var(--font-sans);
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 20px;
@@ -219,76 +219,42 @@ img {
   font-size: 1.15rem;
   color: var(--text-light);
   font-style: italic;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
-/* Countdown */
-.countdown-section {
-  margin-bottom: 40px;
+/* Hero Stat Badges */
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 36px;
 }
 
 .live-badge {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  background: rgba(74, 144, 217, 0.08);
+  border: 1px solid rgba(74, 144, 217, 0.2);
+  border-radius: 999px;
+  padding: 8px 16px;
 }
 
 .live-dot {
   width: 8px;
   height: 8px;
-  background: #e74c3c;
+  background: var(--blue-primary);
   border-radius: 50%;
   animation: pulse-dot 1.5s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
-}
-
-.live-tag {
-  background: #e74c3c;
-  color: white;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: 800;
-}
-
-.event-date {
-  color: var(--text-gray);
-  font-size: 1rem;
-  margin-bottom: 16px;
-}
-
-.countdown {
-  display: flex;
-  gap: 24px;
-}
-
-.countdown-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.countdown-number {
-  font-size: 3rem;
-  font-weight: 900;
-  color: var(--blue-primary);
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-}
-
-.countdown-label {
-  font-size: 0.8rem;
-  color: var(--text-gray);
-  margin-top: 4px;
-  letter-spacing: 1px;
 }
 
 /* Hero Image Placeholder */
@@ -364,6 +330,19 @@ img {
   justify-content: center;
   margin: 40px auto 0;
   text-align: left;
+}
+
+.cta-small {
+  padding: 14px 28px;
+  margin-top: 16px;
+}
+
+.cta-small .cta-main {
+  font-size: 1rem;
+}
+
+.cta-small .cta-sub {
+  font-size: 0.75rem;
 }
 
 /* ========================================
@@ -457,7 +436,7 @@ img {
 }
 
 /* ========================================
-   What We'll Cover Section
+   Cover Card Section (Assessment CTA + Curriculum)
    ======================================== */
 .cover-section {
   padding: 80px 24px;
@@ -490,31 +469,182 @@ img {
   line-height: 1.7;
 }
 
-.cover-item {
-  margin-bottom: 36px;
-  padding-left: 20px;
-  border-left: 3px solid var(--blue-primary);
-}
-
-.cover-item h3 {
-  color: var(--blue-primary);
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.cover-item p {
-  color: var(--text-light);
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
 .cover-warning {
   text-align: center;
   color: var(--text-gray);
   font-size: 0.85rem;
   margin-top: 32px;
   opacity: 0.7;
+}
+
+/* ========================================
+   Curriculum Tiers
+   ======================================== */
+.curriculum-tier {
+  margin-bottom: 40px;
+  padding: 32px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  position: relative;
+}
+
+.curriculum-tier:last-child {
+  margin-bottom: 0;
+}
+
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tier-step {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--blue-primary);
+  background: rgba(74, 144, 217, 0.1);
+  border: 1px solid rgba(74, 144, 217, 0.2);
+  border-radius: 8px;
+  padding: 4px 10px;
+  letter-spacing: 1px;
+}
+
+.tier-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--text-gray);
+}
+
+.tier-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: 8px;
+}
+
+.tier-desc {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.tier-stat {
+  color: var(--blue-primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.tier-link {
+  color: var(--blue-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.tier-link:hover {
+  color: var(--blue-light);
+}
+
+/* Course Grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.course-card {
+  background: var(--bg-dark);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.3s, transform 0.2s;
+  display: block;
+}
+
+.course-card:hover {
+  border-color: var(--blue-primary);
+  transform: translateY(-2px);
+}
+
+.course-card h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--blue-primary);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.course-card p {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+/* ========================================
+   Testimonials Section
+   ======================================== */
+.testimonials-section {
+  padding: 100px 24px;
+  position: relative;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.testimonial-stars {
+  color: #f5a623;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.testimonial-quote {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-white);
+}
+
+.testimonial-title {
+  font-size: 0.8rem;
+  color: var(--text-gray);
 }
 
 /* ========================================
@@ -585,9 +715,6 @@ img {
   line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -0.5px;
-}
-
-.host-text h2 {
   color: var(--text-white);
 }
 
@@ -603,7 +730,7 @@ img {
 }
 
 /* ========================================
-   Registration Section
+   Enterprise / Register Section
    ======================================== */
 .register-section {
   padding: 100px 24px;
@@ -638,47 +765,6 @@ img {
   position: relative;
 }
 
-.register-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 440px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.register-form input {
-  padding: 16px 20px;
-  border-radius: 12px;
-  border: 1px solid var(--border-subtle);
-  background: var(--bg-card);
-  color: var(--text-white);
-  font-size: 1rem;
-  font-family: var(--font-sans);
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-.register-form input::placeholder {
-  color: var(--text-gray);
-}
-
-.register-form input:focus {
-  border-color: var(--blue-primary);
-}
-
-.cta-form {
-  justify-content: center;
-  width: 100%;
-}
-
-.register-note {
-  color: var(--text-gray);
-  font-size: 0.8rem;
-  margin-top: 16px;
-  position: relative;
-}
-
 /* ========================================
    Footer
    ======================================== */
@@ -688,6 +774,24 @@ img {
   border-top: 1px solid var(--border-subtle);
   color: var(--text-gray);
   font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--text-white);
 }
 
 /* ========================================
@@ -711,14 +815,8 @@ img {
     display: none;
   }
 
-  .countdown {
+  .hero-badges {
     justify-content: center;
-  }
-
-  .countdown-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .cta-button {
@@ -736,16 +834,24 @@ img {
     font-size: 2rem;
   }
 
-  .host-image-frame {
-    max-width: 300px;
-  }
-
   .cover-card {
     padding: 40px 24px;
   }
 
   .cover-card h2 {
     font-size: 1.8rem;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-tier {
+    padding: 24px;
   }
 
   .nav-links {
@@ -770,6 +876,10 @@ img {
     padding: 24px;
     gap: 20px;
   }
+
+  .register-section h2 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -777,23 +887,29 @@ img {
     font-size: 2rem;
   }
 
-  .countdown-number {
-    font-size: 2rem;
-  }
-
-  .countdown {
-    gap: 16px;
-  }
-
   .problem-section h2 {
     font-size: 1.5rem;
   }
 
   .register-section h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .host-text h2 {
     font-size: 1.6rem;
+  }
+
+  .testimonials-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
   }
 }
