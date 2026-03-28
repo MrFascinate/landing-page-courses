@@ -415,9 +415,10 @@ img {
 
 .transition-arrow {
   text-align: center;
-  font-size: 2rem;
-  margin-top: 16px;
-  color: #f5a623;
+  font-size: 3.5rem;
+  margin-top: 12px;
+  color: var(--text-white);
+  line-height: 1;
 }
 
 /* ========================================
