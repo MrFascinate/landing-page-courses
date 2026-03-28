@@ -351,17 +351,15 @@ img {
   padding: 0 30px;
 }
 
-.logo-item {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--text-gray);
-  white-space: nowrap;
-  opacity: 0.6;
+.logo-img {
+  height: 40px;
+  width: auto;
+  opacity: 0.7;
   transition: opacity 0.3s;
-  letter-spacing: 1px;
+  flex-shrink: 0;
 }
 
-.logo-item:hover {
+.logo-img:hover {
   opacity: 1;
 }
 
