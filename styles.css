@@ -567,6 +567,13 @@ img {
   transform: translateY(-2px);
 }
 
+.course-thumb {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
 .course-card h4 {
   font-size: 1rem;
   font-weight: 800;
